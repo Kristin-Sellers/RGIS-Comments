@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<style>
+/*styling popup */
+		.mapboxgl-popup {
+				max-width: 220px;
+				color: #5b6875;
+				cursor: pointer;
+				text-align: center;
+				border-radius: 6px;
+				padding: 8px 0;
+				position: absolute;
+				font: 12px/20px 'Gill Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+				font-size: 10pt;
+			}
+
+/* Stylying the home button, let's see if this works */
+		#HomeButton {
+				position: absolute;
+				top: 95px;
+				left: 20px;
+				z-index: 50;
+			}
+/* ended up not working :( needed to be using an arcgis map to access ESRI's API */
+</style>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title> RGIS Comments</title>
+
+  <!-- load in leaflet css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+  <!-- load in your css -->
+	<link rel="stylesheet" href="css/main.css" />
+
+  <!-- load in the leaflet API -->
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+  <!-- load in the mapbox API -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+
+	<!-- load map_gj.js -->
+	<script type="text/javascript" src="data/map_gj.js"></script>
+
+</head>
+<body>
+<!-- create button div -->
+<!--	<div id="button-div">
+			<button id="myButton">
+					RGIS Comments
+			</button>
+	</div> -->
+<!-- load button.js -->
+	<script type="text/javascript" src="js/button.js"></script>
+
+
+<!-- modify the button -->
+		<div id="button-div">
+			<button id="myButton"onclick="changeTextZoom()">
+				Click the yellow stars to see what project ideas were generated at the Resistance GIS (RGIS) conference. Held in Spring 2017, this conference discussed how GIS can be used as a tool for community empowerment and social movement support.
+			</button>
+	</div>
+
+<!-- create map div -->
+	<div id = "map"></div>
+
+<!-- load the map.js file -->
+	<script type="text/javascript" src="js/map.js"></script>
+
+	</body>
+
+
+</html>

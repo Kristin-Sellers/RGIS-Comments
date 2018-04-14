@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #map {
+  height: 100vh;
+  width: 100vw;
+}
+
+#button-div {
+  position: absolute;
+  margin: 0 auto;
+  left: 0.5%;
+  z-index: 999;
+}
+
+button {
+  background-color: #708090;
+  opacity: 0.90;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Gill Sans;
+  font-size: 28px;
+  font-style: regular;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+button:hover {
+  background-color: #8c99a6;
+  color:white;
+}
+
+#popup {
+  background-color: #708090;
+
+}
